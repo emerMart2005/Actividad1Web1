@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Actividad1Web1</title>
+  </head>
+  <body class="grid-container">
+    <header class="header">
+      <h1 id="titulo">OVI-Base de Datos I</h1>
+      <p id="eslogan">Aprendamos sobre las bases de datos</p>
+    </header>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li>
+          <a href="#">Lectura</a>
+          <ul>
+            <li><a href="sql.html">SQL</a></li>
+            <li><a href="modeloER.html">Modelo ER</a></li>
+            <li><a href="#">Lectura 3</a></li>
+            <li><a href="#">Lectura 4</a></li>
+            <li><a href="#">Lectura 5</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Multimedia</a></li>
+        <li>
+          <a href="#">Actividades</a>
+          <ul>
+            <li><a href="#">Actividad 1</a></li>
+            <li><a href="#">Actividad 2</a></li>
+          </ul>
+        </li>
+        <li><a href="../autor.html">Autor</a></li>
+      </ul>
+    </nav>
+    <aside class="sidebar">SIDEBAR</aside>
+    <article class="main">
+      <section>
+        <h2>¿Qué es SQL?</h2>
+        <p>
+          SQL (Structured Query Language) es un lenguaje de programación
+          utilizado para almacenar, administrar y procesar datos en bases de
+          datos relacionales. Estas bases almacenan la información en tablas
+          organizadas en filas y columnas, lo que facilita la gestión de los
+          datos. Con SQL, se pueden realizar operaciones como almacenamiento,
+          actualización, eliminación y consulta de información. Además, permite
+          optimizar y mantener el rendimiento de la base de datos.
+        </p>
+      </section>
+
+      <section>
+        <h2>¿Por qué es importante SQL?</h2>
+        <p>
+          SQL es un lenguaje ampliamente utilizado en diferentes aplicaciones
+          debido a su integración con diversos lenguajes de programación. Por
+          ejemplo, se puede combinar con Java para desarrollar aplicaciones
+          eficientes en el procesamiento de datos. Su sintaxis es sencilla,
+          basada en palabras clave comunes en inglés, lo que facilita su
+          aprendizaje y uso.
+        </p>
+      </section>
+
+      <section>
+        <h2>Historia de SQL</h2>
+        <p>
+          SQL fue desarrollado en los años 70, basado en el modelo relacional de
+          datos. Inicialmente se llamaba SEQUEL (Structured English Query
+          Language), pero posteriormente se abrevió a SQL. Oracle, conocida en
+          aquel entonces como Relational Software, fue la primera empresa en
+          comercializar un sistema de gestión de bases de datos SQL.
+        </p>
+      </section>
+
+      <section>
+        <h2>Componentes de un sistema SQL</h2>
+        <article>
+          <h3>Tablas SQL</h3>
+          <p>
+            Las tablas son la base de una base de datos relacional, organizadas
+            en filas y columnas. Las relaciones entre tablas optimizan el
+            almacenamiento y acceso a los datos.
+          </p>
+        </article>
+        <article>
+          <h3>Instrucciones SQL</h3>
+          <p>
+            Las instrucciones SQL permiten manipular datos dentro de la base de
+            datos. Por ejemplo, el comando <code>INSERT</code> almacena nuevos
+            registros:
+          </p>
+          <pre><code>INSERT INTO Mattress_table (brand_name, cost) VALUES('A', '499');</code></pre>
+        </article>
+        <article>
+          <h3>Procedimientos almacenados</h3>
+          <p>
+            Son conjuntos de instrucciones SQL predefinidas dentro de la base de
+            datos, optimizando la ejecución de tareas repetitivas.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>¿Cómo funciona SQL?</h2>
+        <p>SQL opera a través de diferentes componentes:</p>
+        <ul>
+          <li>
+            <strong>Analizador:</strong> Verifica la sintaxis y permisos de las
+            consultas SQL.
+          </li>
+          <li>
+            <strong>Motor relacional:</strong> Genera un plan de ejecución para
+            las consultas.
+          </li>
+          <li>
+            <strong>Motor de almacenamiento:</strong> Procesa y almacena los
+            datos en disco.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Comandos SQL</h2>
+        <ul>
+          <li>
+            <strong>DDL (Lenguaje de Definición de Datos):</strong> Crea y
+            modifica la estructura de la base de datos (<code>CREATE</code>,
+            <code>ALTER</code>).
+          </li>
+          <li>
+            <strong>DQL (Lenguaje de Consulta de Datos):</strong> Recupera
+            información almacenada (<code>SELECT</code>).
+          </li>
+          <li>
+            <strong>DML (Lenguaje de Manipulación de Datos):</strong> Modifica
+            registros (<code>INSERT</code>, <code>UPDATE</code>,
+            <code>DELETE</code>).
+          </li>
+          <li>
+            <strong>DCL (Lenguaje de Control de Datos):</strong> Gestiona
+            permisos de acceso (<code>GRANT</code>, <code>REVOKE</code>).
+          </li>
+          <li>
+            <strong>TCL (Lenguaje de Control de Transacciones):</strong> Maneja
+            transacciones (<code>COMMIT</code>, <code>ROLLBACK</code>).
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Estándares de SQL</h2>
+        <p>
+          SQL es un estándar definido por ANSI e ISO desde 1986, lo que permite
+          su uso en diferentes sistemas de bases de datos.
+        </p>
+      </section>
+
+      <section>
+        <h2>Seguridad en SQL</h2>
+        <article>
+          <h3>Inyección SQL</h3>
+          <p>
+            Es un ataque en el que un atacante manipula consultas SQL para
+            acceder, modificar o eliminar datos.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>SQL y sus variantes</h2>
+        <article>
+          <h3>¿Qué es MySQL?</h3>
+          <p>
+            MySQL es un sistema de bases de datos relacionales de código
+            abierto, popular en el desarrollo web.
+          </p>
+        </article>
+        <article>
+          <h3>Diferencias entre SQL y MySQL</h3>
+          <p>
+            SQL es un lenguaje de consulta, mientras que MySQL es un software de
+            base de datos que lo utiliza.
+          </p>
+        </article>
+        <article>
+          <h3>¿Qué es NoSQL?</h3>
+          <p>
+            NoSQL hace referencia a bases de datos no relacionales, utilizadas
+            en aplicaciones de alto rendimiento.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>SQL Server</h2>
+        <p>
+          SQL Server es el sistema de bases de datos de Microsoft, con
+          diferentes ediciones adaptadas a diversas necesidades empresariales.
+        </p>
+      </section>
+    </article>
+    <footer class="footer">
+      <p class="piePagina">Creado por Emerson Martinez - 2025</p>
+      <p class="piePagina">
+        Contacto: <a href="mailto:miemail@gmail.com">miemail@gmail.com</a>
+      </p>
+    </footer>
+  </body>
+</html>

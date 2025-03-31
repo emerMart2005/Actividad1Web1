@@ -30,8 +30,13 @@ body {
     background-color: rgb(0, 255, 255);
   }
   .navbar {
-    grid-area: navbar;
-    background-color: aquamarine;
+    background-color: #001d3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: relative; /* Mantiene el nav en su lugar */
   }
   .sidebar {
     grid-area: sidebar;
@@ -40,6 +45,8 @@ body {
   .main {
     grid-area: main;
     background-color: blueviolet;
+    padding: 0.4rem;
+    font-size: 1.3rem;
   }
   .footer {
     grid-area: footer;
@@ -47,38 +54,128 @@ body {
   }
   @media (min-width: 768px) {
     grid-template:
-      "header navbar" 100px
-      "header navbar " 100px
+      "header header" 100px
+      "navbar navbar " 50px
       "main sidebar " auto
       "footer footer" 80px /
       auto 200px;
   }
   @media (min-width: 992px) {
     grid-template:
+      "header  header" 100px
+      "navbar  navbar" 50px
+      "main    sidebar" auto
+      "footer  footer" 80px /
+      auto 200px;
+
+    /*  grid-template:
       "header header header" 100px
       "navbar main sidebar" auto
       "footer footer footer" 100px/
-      200px auto 200px;
+      200px auto 200px; menu a la dercha*/
   }
 }
-.topnav {
-  background-color: #001d3d;
-  overflow: hidden;
+
+.menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
-.topnav a {
-  font-family: "Lucida Sans";
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 15px 20px;
   text-decoration: none;
-  font-size: 17px;
-}
-.topnav a:hover {
-  background-color: #ddd;
   color: black;
+  background-color: bisque;
+  transition: background 0.3s ease;
+  white-space: nowrap; /* Evita que el texto se divida */
 }
-.topnav a.active {
-  background-color: #ffd60a;
-  color: #000814;
+
+/* Submenús */
+.menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: bisque;
+  min-width: 150px;
+  z-index: 1000; /* Asegura que el submenú esté sobre otros elementos */
+}
+
+.menu ul li {
+  display: block;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  transition: background 0.3s ease;
+}
+
+.menu ul li a:hover {
+  background-color: #ffc107;
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.menu li:hover > ul {
+  display: block;
+}
+
+/* Cambio de color en los menús principales */
+.menu > li > a:hover {
+  background-color: #ffc107;
+}
+#tituloInicio {
+  font-size: 3rem;
+}
+#imgBD {
+  float: left;
+  margin: 0.5rem;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../font/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../font/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../font/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../font/Roboto/static/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../font/Roboto/static/Roboto-Regular.ttf");
+}
+
+h1 {
+  font-family: "Poppins-Bold", sans-serif;
+}
+h2,
+h3 {
+  font-family: "Poppins-SemiBold", sans-serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+small {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
 }

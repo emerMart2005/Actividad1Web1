@@ -12,27 +12,85 @@
       <p>Estudiaremos las bases de datos</p>
     </header>
     <nav class="navbar">
-      <div class="topnav">
-        <a class="active" href="index.html">Inicio</a>
-        <a href="noticias.html">Lecturas</a>
-        <a href="contactenos.html">Multimedia</a>
-        <a href="acerca.html">Actividades</a>
-        <a href="bbbd">Autores</a>
-      </div>
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li>
+          <a href="#">Lectura</a>
+          <ul>
+            <li><a href="#">Lectura 1</a></li>
+            <li><a href="#">Lectura 2</a></li>
+            <li><a href="#">Lectura 3</a></li>
+            <li><a href="#">Lectura 4</a></li>
+            <li><a href="#">Lectura 5</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Multimedia</a></li>
+        <li>
+          <a href="#">Actividades</a>
+          <ul>
+            <li><a href="#">Actividad 1</a></li>
+            <li><a href="#">Actividad 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Autor</a></li>
+      </ul>
     </nav>
     <aside class="sidebar">SIDEBAR</aside>
     <article class="main">
-      <h2>Que es una base de datos</h2>
+      <h2 id="tituloInicio">Que es una base de datos</h2>
+      <figure>
+        <img
+          src="img/BaseDatos.jpg"
+          alt="Representacion de una base de datos"
+          width="30%"
+          id="imgBD"
+        />
+      </figure>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-        consequuntur similique repellendus laborum non neque eius placeat iste
-        libero veniam magnam laboriosam animi repellat consequatur veritatis
-        voluptatem explicabo, accusantium ad.
+        Las bases de datos son sistemas organizados de almacenamiento de
+        información digital que permiten gestionar datos de manera eficiente. Su
+        propósito es facilitar la recopilación, el acceso y la manipulación de
+        datos, permitiendo a empresas, organizaciones y usuarios gestionar
+        grandes volúmenes de información de manera estructurada. Generalmente,
+        estos sistemas se apoyan en un sistema de gestión de bases de datos
+        (DBMS), el cual proporciona herramientas para almacenar, consultar y
+        actualizar la información de forma segura y optimizada. La mayoría de
+        los sistemas actuales utilizan estructuras de tablas con filas y
+        columnas para organizar los datos de manera eficiente, permitiendo su
+        procesamiento y consulta mediante el lenguaje SQL, que se ha convertido
+        en el estándar en la industria (Oracle, 2020).
+      </p>
+
+      <p>
+        Desde su origen en la década de 1960, las bases de datos han
+        evolucionado de manera considerable. Inicialmente, se implementaron
+        modelos jerárquicos que estructuraban la información en forma de árbol,
+        permitiendo relaciones de uno a muchos. Posteriormente, surgieron las
+        bases de datos de red, que ofrecieron una mayor flexibilidad en las
+        relaciones de los datos. Sin embargo, estas primeras soluciones eran
+        limitadas en términos de escalabilidad y adaptabilidad. En los años 80,
+        las bases de datos relacionales revolucionaron el almacenamiento de
+        información mediante estructuras tabulares y el uso de SQL,
+        convirtiéndose en la opción dominante. En la década de 1990, surgieron
+        las bases de datos orientadas a objetos, que permitieron modelar datos
+        de manera más natural para aplicaciones complejas.
+      </p>
+
+      <p>
+        Con el auge de Internet y el crecimiento exponencial de los datos,
+        surgieron las bases de datos NoSQL, capaces de manejar información no
+        estructurada con mayor rapidez y flexibilidad. Actualmente, las bases de
+        datos en la nube han cambiado la forma en que las empresas gestionan la
+        información, permitiendo almacenamiento escalable y accesible desde
+        cualquier lugar. Además, las bases de datos autónomas representan una de
+        las innovaciones más recientes, ya que utilizan inteligencia artificial
+        para autoadministrarse, optimizando su rendimiento y seguridad sin
+        intervención humana (Oracle, 2020).
       </p>
     </article>
     <footer class="footer">
       <p>Creado por Emerson Martinez - 2025</p>
-      <p>Contacto: <a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a></p>
+      <p>Contacto: <a href="mailto:miemail@gmail.com">miemail@gmail.com</a></p>
     </footer>
   </body>
 </html>

@@ -43,7 +43,7 @@ body {
   }
   .sidebar {
     grid-area: sidebar;
-    background-color: rgb(116, 116, 161);
+    background-color: white;
   }
   .main {
     grid-area: main;
@@ -69,7 +69,7 @@ body {
       "navbar navbar " 53px
       "main sidebar " auto
       "footer footer" 100px /
-      auto 280px;
+      auto 315px;
   }
   @media (min-width: 992px) {
     grid-template:
@@ -78,12 +78,6 @@ body {
       "main    sidebar" auto
       "footer  footer" 100px /
       auto 325px;
-
-    /*  grid-template:
-      "header header header" 100px
-      "navbar main sidebar" auto
-      "footer footer footer" 100px/
-      200px auto 200px; menu a la dercha*/
   }
 }
 
@@ -149,11 +143,12 @@ body {
   font-size: 3rem;
 }
 .piePagina {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Light", sans-serif;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
   color: #ececec;
-  font-family: "Roboto-Light", sans-serif;
 }
 #imgBD {
   float: left;
@@ -192,12 +187,17 @@ body {
 #titulo {
   color: #ececec;
 }
+#autorh2 {
+  text-align: center !important;
+  font-family: "Poppins-SemiBold", sans-serif;
+}
 h1 {
   font-family: "Poppins-Bold", sans-serif;
 }
 h2,
 h3 {
   font-family: "Poppins-SemiBold", sans-serif;
+  text-align: justify;
 }
 p {
   text-align: justify;
@@ -242,4 +242,81 @@ section {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+aside {
+  width: 100%;
+  max-width: 350px; /* Máximo tamaño en pantallas grandes */
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+aside h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.twitter-timeline {
+  width: 100% !important; /* Se adapta automáticamente */
+  height: 400px !important; /* Ajusta la altura según necesidad */
+}
+
+/* 📱 Estilos responsivos */
+@media screen and (max-width: 768px) {
+  /* Tablet */
+  aside {
+    max-width: 90%;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Teléfono */
+  aside {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  aside h2 {
+    font-size: 16px;
+  }
+
+  .twitter-timeline {
+    height: 300px !important; /* Reducimos la altura en móviles */
+  }
+}
+#modeloER {
+  display: block; /* Asegura que se comporte como bloque */
+  max-width: 100%; /* Ocupa todo el ancho disponible */
+  height: auto; /* Mantiene la proporción */
+  margin: 20px auto; /* Centra horizontalmente */
+}
+
+/* Ajuste para pantallas grandes */
+@media screen and (min-width: 769px) {
+  #modeloER {
+    max-width: 90%; /* Un poco de margen en los lados */
+    height: auto;
+  }
+}
+#figureSoftwareBD {
+  float: right;
+  width: 45%;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem; /* Reduce margen izquierdo */
+}
+
+#figureSoftwareBD img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px; /* Opcional: esquinas redondeadas */
+}
+figcaption {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333; /* Color oscuro para que sea legible */
 }
